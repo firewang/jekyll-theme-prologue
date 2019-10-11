@@ -65,8 +65,8 @@ busuanzi: true
 
 # comments # register gitalk : https://github.com/settings/applications/new
 gitalk:
-  clientID: d9895b7b553895c0d1fb    #生成的clientID
-  clientSecret: ab6718c617b27bee3a3db377ed5453554bc6182b    #生成的clientSecret
+  clientID: 38b558d1c545915d7d05    #生成的clientID
+  clientSecret: 8822854874e116988cfd227ebf6b92e7bbd58477    #生成的clientSecret
   repo: jekyll-theme-prologue    #仓库名称
   owner: firewang    #github用户名
   admin: firewang
