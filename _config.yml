@@ -1,0 +1,80 @@
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory. Please note that the following lines are
+# NECESSARY for Prologue to work correctly:
+#
+# theme: jekyll-theme-prologue
+# collections: [sections]
+#
+# They activate the theme and tell Jekyll to find your homepage content
+# in /_sections. Note where "sections" starts with an underscore
+# and where it doesn't. The social settings will make links to
+# Twitter, etc., but only if you give the URL.
+#
+# Also, be sure to customize url and baseurl for your site.
+#
+# ---------------------------------------------------------------
+#
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+subtitle: Your awesome subtitle
+description: >- # this means to ignore newlines until "baseurl:"
+  This is the demo site for a Jekyll theme version of
+  HTML5 UP's sleek, responsive site template Prologue.
+author: firewang
+email: firewang@gmail.com
+avatar: assets/images/avatar.jpg
+
+# You'll want to customize url and baseurl for your own site:
+baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Social settings
+# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
+github_star: https://github.com/firewang/jekyll-theme-prologue/star
+github_fork: https://github.com/firewang/jekyll-theme-prologue/fork
+github_url: https://github.com/firewang
+twitter_url:
+facebook_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+dribbble_url:
+
+# Analytics
+# Google Analytics Tracking ID goes here:
+google_analytics:
+# busuanzi-statistics
+busuanzi: true
+
+# comments # register gitalk : https://github.com/settings/applications/new
+gitalk:
+  clientID: d9895b7b553895c0d1fb    #生成的clientID
+  clientSecret: ab6718c617b27bee3a3db377ed5453554bc6182b    #生成的clientSecret
+  repo: jekyll-theme-prologue    #仓库名称
+  owner: firewang    #github用户名
+  admin: firewang
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+# mathjax
+mathjax: false
+
+# The following settings are NECESSARY for the Prologue theme to run:
+theme: jekyll-theme-prologue
+collections: [sections]

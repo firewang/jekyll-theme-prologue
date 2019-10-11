@@ -1,0 +1,22 @@
+<!-- Footer -->
+<div id="footer">
+  
+    <!-- busuanzi-statistics -->
+  <ul class="copyright">
+    <li>Site_pv:<span id="busuanzi_value_site_pv"></span></li>
+    <li>Site_uv:<span id="busuanzi_value_site_uv"></span></li>
+    <li>Page_pv:<span id="busuanzi_value_page_pv"></span></li>
+  </ul>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+  <!-- Copyright -->
+  <ul class="copyright">
+    {% if site.title or site.author %}
+      <li>&copy; {{- site.title | default: site.author -}}. All rights reserved.</li>
+    {% endif %}
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  
+</div>
