@@ -75,6 +75,10 @@ gitalk:
 # mathjax
 mathjax: false
 
+# posts ordering  # 左侧导航栏文章列表排序
+order_by: date # date | order
+ordering: ascending # ascending | reverse
+
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+remote_theme: firewang/jekyll-theme-prologue
 collections: [sections]

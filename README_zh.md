@@ -1,4 +1,8 @@
-# Prologue - Jekyll Theme
+---
+hide: true 
+---
+
+# Prologue 主题说明
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
@@ -12,12 +16,13 @@
 
 # 配置项
 
-1. 直接 Fork 或者 clone the [GitHub repository]
+1. 直接 Fork 或者 clone the [GitHub repository]( https://github.com/firewang/jekyll-theme-prologue )
 2. 修改仓库名称为你想要设置的站点名称
 3. 配置 `_config.yml` 
    1.  `url` and `base_url` 你的网站的信息
    2. 头像 `avatar: path/to/your/avatar.jpg`  ，目前路径`avatar: assets/images/avatar.jpg` (48x48 pixels 最佳)
    3. Gitalk生成你自己仓库的clientID 和clientSecret
+   4.  配置左侧导航栏文章的排序方式，可以根据文章日期（date），和在文章中设置的文章排序号（order）进行升序（ascending）或者降序（reverse）排列
 
 # 生成主页面
 
@@ -45,10 +50,9 @@ layout: blog
 title: My Blog
 author: yourname
 mathjax: false
+order: 1
 ---
 ```
-
-
 
 # 增加页面
 
@@ -66,9 +70,16 @@ layout: page
 - `order` ：排序，如果还有其他页面，这里控制所有页面的显示顺序，（填1，2，3…）
 - `icon` : 选择你喜欢的icon [Font Awesome](https://fontawesome.com/icons),  Example: `fa-github`，可不填
 - `icon-style`：icon样式 (可选; "solid" is default, "regular" for outline style icons, or "brands" for logos)
+- permalink: 可选，自定义永久链接，不会因为文件名称改变而改变链接（比如内容由about_me.md生成，而permalink设置为`/about/`，则链接地址为 about 而不是 about_me）
 - `hide`：是否显示页面link (可选; if `true`, 在导航栏不会显示link)
 
 其他的SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
+
+# 自定义页面
+
+如果目前在 `_layouts` 中设置的页面模板无法满足需求，可以自己新增自定义的页面模板到该目录，[基于 Liquid 语言模板]( https://github.com/Shopify/liquid ) ，可参考[中文文档]( https://liquid.bootcss.com/ )学习模板语言
+
+
 
 # Contributing
 
@@ -78,7 +89,7 @@ Please feel free to submit issues and feature requests!
 
 Original README from HTML5 UP:
 
-```
+```markdown
 Prologue by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
